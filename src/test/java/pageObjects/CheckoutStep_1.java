@@ -11,7 +11,7 @@ import static org.openqa.selenium.By.xpath;
 
 public class CheckoutStep_1 extends BasePageObject {
 
-    private By emailAddress = xpath("//div[@class=\"field required\"]//input[@id='customer-email']");
+    private final By emailAddress = xpath("//div[@class=\"field required\"]//input[@id='customer-email']");
     private By firstName = xpath("//div[@class=\"control\"]//input[@name=\"firstname\"]");
     private By lastName = xpath("//div[@class=\"control\"]//input[@name=\"lastname\"]");
     private By streetAddress = xpath("//div[@class=\"control\"]//input[@name=\"street[0]\"]");
